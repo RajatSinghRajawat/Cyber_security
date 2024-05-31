@@ -99,31 +99,30 @@ const CyberCourses = () => {
         </center>
       </div>
       <div className='text-center mt-4'><button className='p-2 btn2'>Get Your Demo Class</button></div>
-      <div className="container mt-5">
-        <div className="row">
+      <div class="container mt-5">
+        <div class="row">
           {
-            cards.map((i) => {
+            cards.map((i, index) => {
               return (
-                <div className="col-lg-3">
-                  <div className="card bg ones" >
-                    <img src={i.imgs} className="card-img-top h-full" style={{ height: "45%", width: "90%", objectFit:"contain" }} alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title cardlanding">{i.title}</h5>
+                <div class="col-lg-3 col-md-6 col-sm-12" key={index}>
+                  <div class="card bg ones">
+                    <img src={i.imgs} class="card-img-top h-full" style={{ height: "45%", width: "90%", objectFit: "contain" }} alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title cardlanding">{i.title}</h5>
                       <p style={{ borderBottom: "2px solid grey" }}>{i.p}</p>
-                      <div className='d-flex justify-between'>
+                      <div class='d-flex justify-between'>
                         <h6><img src="https://s3-alpha-sig.figma.com/img/0804/57cd/522a2997c17193d2b47143d41e50a2e2?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eLKh~~~AwD~DC4M5tn-a20zQHpK2ZMoEFREffxu91od~XTtzavWa~Uh4f3XrlPET0vSycF6ORR92kxNeHeo-XsC-BZ~bTZCmbcwhWwOSxniB-4qfltE9xioX-o7RrvgS3nDWH7YF9D3xMcZv-PjcUiUrq1VaxysTUJMX26hJ7DW0x6ysQgGZO8oS93Kkb7W33fLiyA2SQ-lRXGpqfNaA8DcNCBJIjEktby6n-z8v4LDRYXEX36gTYizAbn2nTk1JPCHu~q44EhIAPvl2U0F0nNPIplNiF-hm7F0AXtYmb4WQG89WoHNpEmJ8lNDB17e7hox6s8NLK2~e4N70UXv-6g__" alt="" />28 Modules</h6>
-                        <h6 className='ps-4'>🎖️Exam included</h6>
+                        <h6 class='ps-4'>🎖️Exam included</h6>
                       </div>
-
                     </div>
                   </div>
                 </div>
               )
             })
           }
-
         </div>
       </div>
+
       <CyberFoot />
     </>
   )

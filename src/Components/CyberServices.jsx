@@ -84,7 +84,7 @@ const CyberServices = () => {
         <center className='row ps-4 pe-4'>
           <div className="landingpage12">
             <p className="landingpage13">Listen it from your Fellow students</p>
-            <img className="vector-8-bh" style={{marginLeft:"22%"}} src={vector} />
+            <img className="vector-8-bh" style={{ marginLeft: "22%" }} src={vector} />
           </div>
           <p className='S_p'>HTB Academy's hands-on certifications are designed to provide job proficiency on various cybersecurity roles. As ensured by up-to-date training material, rigorous certifications are designed to provide job proficiency on various cybersecurity roles. As ensured by up-to-date training material, rigorous  certification processes and real-world exam lab environments, HTB certified individuals will possess deep technical competency in different cybersecurity domains.</p>
         </center>
@@ -177,7 +177,7 @@ const CyberServices = () => {
           </div>
           <div className="col-lg-4">
             <h5 style={{ color: "#05FF00" }}>TIPS-G Cyber Security USES GLOBALLY REPUTED TOOLS & STANDARD FORENSIC TECHNIQUES.</h5>
-            <p style={{ color: "white", textAlign: "ju" }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae porro aliquam aperiam consequatur perferendis, adipisci deserunt tempora quo exercitationem! Quaerat nostrum consequatur fuga totam ut exercitationem labore expedita magnam dolorem odio ea possimus in suscipit perspiciatis maiores officiis error officiis error obcaecati optio tempore, ipsa, officiis error obcaecati optio tempore, ipsa, obcaecati optio tempore, ipsa, modi dolorum eveniet eaque. Eligendi, deleniti officia!</p>
+            <p style={{ color: "white", textAlign: "justify" }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae porro aliquam aperiam consequatur perferendis, adipisci deserunt tempora quo exercitationem! Quaerat nostrum consequatur fuga totam ut exercitationem labore expedita magnam dolorem odio ea possimus in suscipit perspiciatis maiores officiis error officiis error obcaecati optio tempore, ipsa, officiis error obcaecati optio tempore, ipsa, obcaecati optio tempore, ipsa, modi dolorum eveniet eaque. Eligendi, deleniti officia!</p>
           </div>
           <div className="col-lg-4">
             <div class="card text-center first" style={{ backgroundColor: "#1A2332", color: "white", textAlign: "center", width: "80%" }}>

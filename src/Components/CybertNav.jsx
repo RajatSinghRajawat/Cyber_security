@@ -7,7 +7,7 @@ const CybertNav = () => {
           <h2 style={{ backgroundColor: "#05FF00", height: "40px", textAlign: "center", fontWeight: "900" }}>New Batches are Starting Soon!</h2>
             <nav className="navbar navbar-expand-lg m-5">
                 <div className="container-fluid">
-                    <a className="navbar-brand tp" href="tipgcyber.html">TIPS-G</a>
+                    <h1 className="navbar-brand tp" href="tipgcyber.html">TIPS-G</h1>
                     <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation" style={{ color: "#FFF" }}>

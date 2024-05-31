@@ -135,7 +135,7 @@ const CyberBody = () => {
         <div className="row landingpage8">
           <div className='col-lg-3'></div>
           <div className='col-lg-3'>
-            <div class="card landingpage4" >
+            <div class="card h-100 landingpage4"  >
               <img src={one11} style={{ position: "relative", top: "-42px" }} className="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title"><span className='landingpage6'>Get certified with</span> <br /> <span className='landingpage5'>TIPS-G</span></h5>
@@ -144,8 +144,8 @@ const CyberBody = () => {
               </div>
             </div>
           </div>
-          <div className='col-lg-3'>
-            <div class="card landingpage4" >
+          <div className='col-lg-3 mt-5'>
+            <div class="card h-100 landingpage4" >
               <img src={one12} className="card-img-top " style={{ position: "relative", top: "-42px" }} alt="..." />
               <div class="card-body">
                 <h5 class="card-title"><span className='landingpage6'>Master of Your</span> <br /> <span className='landingpage5'>TIPS-G</span></h5>
@@ -165,7 +165,7 @@ const CyberBody = () => {
           <img className="vector-8-bhh" src={vector} />
         </div>
       </div>
-      
+
       <div>
         <h1 className='landingpage14'>Get <span style={{ color: "#05FF00" }}>TIPS-G</span> certified</h1>
         <div className='but'>
@@ -198,14 +198,14 @@ const CyberBody = () => {
           {
             cards.map((i) => {
               return (
-                <div className="col-lg-3">
-                  <div className="card bg" style={{ width: "100%", height: "100%" ,textAlign:"center" }}>
-                    <img src={i.img} className="card-img-top h-full" style={{ height: "65%", width: "90%" , objectFit:"" }} alt="..." />
+                <div className="col-lg-3 mt-4">
+                  <div className="card bg" style={{ width: "100%", height: "100%", textAlign: "center" }}>
+                    <img src={i.img} className="card-img-top h-full" style={{ height: "65%", width: "90%", objectFit: "" }} alt="..." />
                     <div className="card-body">
                       <h5 className="card-title cardlanding">{i.title}</h5>
                       <p style={{ borderBottom: "2px solid grey" }}>{i.p}</p>
                       <div className='d-flex justify-between'>
-                        <h6><img  src="https://s3-alpha-sig.figma.com/img/0804/57cd/522a2997c17193d2b47143d41e50a2e2?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eLKh~~~AwD~DC4M5tn-a20zQHpK2ZMoEFREffxu91od~XTtzavWa~Uh4f3XrlPET0vSycF6ORR92kxNeHeo-XsC-BZ~bTZCmbcwhWwOSxniB-4qfltE9xioX-o7RrvgS3nDWH7YF9D3xMcZv-PjcUiUrq1VaxysTUJMX26hJ7DW0x6ysQgGZO8oS93Kkb7W33fLiyA2SQ-lRXGpqfNaA8DcNCBJIjEktby6n-z8v4LDRYXEX36gTYizAbn2nTk1JPCHu~q44EhIAPvl2U0F0nNPIplNiF-hm7F0AXtYmb4WQG89WoHNpEmJ8lNDB17e7hox6s8NLK2~e4N70UXv-6g__" alt="" />28 Modules</h6>
+                        <h6><img src="https://s3-alpha-sig.figma.com/img/0804/57cd/522a2997c17193d2b47143d41e50a2e2?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eLKh~~~AwD~DC4M5tn-a20zQHpK2ZMoEFREffxu91od~XTtzavWa~Uh4f3XrlPET0vSycF6ORR92kxNeHeo-XsC-BZ~bTZCmbcwhWwOSxniB-4qfltE9xioX-o7RrvgS3nDWH7YF9D3xMcZv-PjcUiUrq1VaxysTUJMX26hJ7DW0x6ysQgGZO8oS93Kkb7W33fLiyA2SQ-lRXGpqfNaA8DcNCBJIjEktby6n-z8v4LDRYXEX36gTYizAbn2nTk1JPCHu~q44EhIAPvl2U0F0nNPIplNiF-hm7F0AXtYmb4WQG89WoHNpEmJ8lNDB17e7hox6s8NLK2~e4N70UXv-6g__" alt="" />28 Modules</h6>
                         <h6 className='ps-4'>🎖️Exam included</h6>
                       </div>
 
@@ -321,41 +321,40 @@ const CyberBody = () => {
           <img className="vector-8-bhhh" src={vector} />
         </div>
       </div>
-      <div className="container">
-        <div className="row">
-          {Cardsperson1.map((Imgg) => {
-            return (
-              <div className="col-lg-4 col-md-6 col-sm-12 main text-center">
-                <img className='imging img-fluid' src={Imgg.imgs} alt="" /> {/* Added img-fluid for responsiveness */}
-                <h1 className='nand'>{Imgg.title}</h1>
-                <p style={{ color: "grey" }}>{Imgg.P}</p>
-                <p style={{ color: "white", textAlign: "justify" }}>{Imgg.p1}.</p>
-                <div className='ok12' style={{ display: 'flex', color: '#05FF00', justifyContent: 'center' }}> {/* Centered social icons */}
-                  <i className="fa-brands fa-square-instagram" style={{ fontSize: '28px', margin: '0 5px' }}></i> {/* Adjusted padding to margin */}
-                  <i className="fa-brands fa-square-facebook" style={{ fontSize: '28px', margin: '0 5px' }}></i>
-                  <i className="fa-brands fa-linkedin" style={{ fontSize: '28px', margin: '0 5px' }}></i>
-                  <i className="fa-brands fa-youtube" style={{ fontSize: '28px', margin: '0 5px' }}></i>
-                </div>
+      <div class="container">
+        <div class="row">
+          {Cardsperson1.map((Imgg, index) => (
+            <div class="col-lg-4 col-md-6 col-sm-12 card-containers" key={index}>
+              <img class='card-image img-fluid' src={Imgg.imgs} alt="" />
+              <h1 class='card-titles'>{Imgg.title}</h1>
+              <p class='card-descriptions'>{Imgg.P}</p>
+              <p class='card-texts'>{Imgg.p1}.</p>
+              <div class='social-iconss'>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
       </div>
+
       {/* <div className='last0'>
         <div>
           <h1 className='last'>Learn Cybersecurity,</h1>
           <h1 className='last1'>invest in your <span className='last2'>Career</span></h1>
         </div>
       </div> */}
-      
-<div class="container text-center  last0">
-  <div class="row">
-    <div class="col">
-      <h1 class="display-4">Learn Cybersecurity,</h1>
-      <h1 class="display-5">invest in your <span class="h2">Career</span></h1>
-    </div>
-  </div>
-</div>
+
+      <div style={{ padding: "6%" }} class="container text-center  last0">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-4">Learn Cybersecurity,</h1>
+            <h1 class="display-5">invest in your <span class="h2">Career</span></h1>
+          </div>
+        </div>
+      </div>
       <CyberFoot />
 
     </>

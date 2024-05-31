@@ -43,6 +43,7 @@ body {
     letter-spacing: 0em;
     text-align: center;
 }
+
 @media (max-width: 768px) {
     .cy {
         background: rgba(92, 255, 35, 1);
@@ -56,23 +57,29 @@ body {
         letter-spacing: 0em;
         text-align: center;
     }
-    .but{
+
+    .but {
         margin-right: 24%;
-        
+
     }
-    body{
-        margin-left:12px;
+
+    body {
+        margin-left: 12px;
     }
-    .backgroundlanding{
+
+    .backgroundlanding {
         margin-top: 15px;
     }
-    .bgs{
+
+    .bgs {
         margin-top: 15px;
     }
 }
-.but{
+
+.but {
     margin-left: 35%;
 }
+
 .tp {
     font-family: Archivo;
     font-size: 36px;
@@ -177,7 +184,7 @@ a {
     /* margin-right: 100px; */
 }
 
-.btn1{
+.btn1 {
     width: auto;
     padding: 5px;
 }
@@ -391,9 +398,9 @@ button {
     width: 200px;
     /* Set the desired width */
     /* Optional: Adjust padding as needed */
-    font-family: 
-    Inter;
-   
+    font-family:
+        Inter;
+
     border: none;
     cursor: pointer;
     border-radius: 13px;
@@ -741,7 +748,8 @@ button:hover {
     border-top: 2px solid gray;
     margin: 10px;
     width: 31%;
-    height: auto;
+    height: 100%;
+    padding: 2%;
 }
 
 .main:hover {
@@ -751,15 +759,76 @@ button:hover {
     width: 31%;
 }
 
-.nand {
+.card-containers {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    color: white;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    border: 2px solid gray;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-titles {
     font-family: Archivo;
     font-size: 28px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
-    text-align: center;
     color: white;
 }
+
+.card-descriptions {
+    color: grey;
+}
+
+.card-texts {
+    color: white;
+    text-align: justify;
+}
+
+.social-iconss {
+    display: flex;
+    justify-content: center;
+    color: #05FF00;
+}
+
+.social-iconss i {
+    font-size: 28px;
+    margin: 0 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-titles {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-titles {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-titles {
+        font-size: 18px;
+    }
+}
+
 
 /* .last {
     font-family: Archivo;
@@ -807,30 +876,29 @@ button:hover {
     border: 3px solid rgb(60, 93, 10);
 }
 
-.ok12 {
-    font-family: Archivo;
-    font-size: 20;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: white;
-}
+
 
 .buttoning {
     background-color: #05FF00;
     margin: 2%;
 }
-.ones{
+
+.ones {
     width: 100%;
     height: 60%;
+    margin: 0;
+    padding: 0;
 }
+
 @media (max-width: 768px) {
 
-    .ones{
+    .ones {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
     }
+
     .buttoning {
         background-color: #05FF00;
         margin: 2%;
@@ -864,9 +932,9 @@ button:hover {
     .bg1:hover {
         border: 3px solid rgb(92, 215, 4);
 
-   }
+    }
 
-   /*   .last {
+    /*   .last {
         font-family: Archivo;
         font-size: 100%;
         font-weight: 900;
@@ -919,15 +987,17 @@ button:hover {
         width: 100%;
         height: auto;
     }
+
     .last0 {
         background: linear-gradient(to right, black, black, black, #178615, black);
-       padding: 10%;
+        padding: 10%;
         border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
     }
+
     .main:hover {
         border: 2px solid rgb(21, 243, 10);
         border-top: 2px solid gray;
@@ -975,122 +1045,102 @@ button:hover {
 }
 
 /* /* ************************************************page3{signup1}***************************************** */
-.company-logo {
-    width: 100%;
-}
+/* General Styles */
 
-.logo-background {
-    background-color: #242526;
-    position: absolute;
-    top: -4px;
-    width: 100%;
-    height: 46%;
-    opacity: .4;
-}
 
-.signin-text1,
-.signin-text {
-    font-size: 25px;
-}
 
-.signup-container {
-    position: relative;
-}
 
-.signup-content {
-    color: white;
+.button-group-sign {
     text-align: center;
-    position: relative;
-    top: -135px;
-    left: 44%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
 }
 
-.bgs {
-    background-color: #1A2332;
-    padding: 10px;
-}
-
-.signfirst {
-    width: 100%;
-    /* max-width: 500px; Adjust max-width as needed */
-    margin: 0 auto;
-    /* Center the container */
-    background-color: #111927;
-    border: 3px solid rgb(54, 52, 52);
-    padding: 2%;
-}
-
-@media (max-width: 768px) {
-    .signfirst {
-        max-width: 100%;
-    }
-}
-
-.border-none {
+.nav-button-sign {
+    background-color: #05FF00;
+    color: white;
     border: none;
-}
-.bgg{
-    background-color: #050a13;
-   
-}
-.lop{
-    margin-left: 25%;
-}
-@media (max-width: 768px) {
-    .signup-content {
-        top: -50px;
-
-    }
-    .lop{
-        margin-left: 5%;
-    }
-    .signin-text1,
-    .signin-text {
-        font-size: 10px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .signup-content1 {
-        color: white;
-        text-align: center;
-        position: relative;
-
-        left: 44%;
-
-        transform: translate(-50%, -50%);
-    }
-
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.signup-content1 {
-    color: white;
+.nav-button-sign:hover {
+    background-color: #0056b3;
+}
+
+.container-sign {
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-title-sign {
     text-align: center;
-    position: relative;
-    top: -65px;
-    left: 44%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
 }
 
-.signfirst {
-    width: 50%;
-    background-color: #111927;
-    border: 3px solid rgb(54, 52, 52);
-    padding: 2%;
+.form-section-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.signfirst:hover {
-    /* width: 50%; */
-    border: 3px solid rgb(144, 105, 105);
-    padding: 2%;
+.form-wrapper-sign {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50rem;
+    max-width: 500px;
+    /* text-align: center; */
 }
 
-.firstone {
-    border: 2px solid red;
+.form-logo-sign {
+    width: 100%;
+    margin-bottom: 20px;
 }
+
+.form-header-sign {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-subtitle-sign {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group-sign {
+    margin-bottom: 15px;
+}
+
+.form-label-sign {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control-sign {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-check-sign {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.form-check-input-sign {
+    margin-right: 10px;
+}
+
+.btn-sign {
+    width: 100%;
+}
+
 
 /* *****************************certificates***************************** */
 .Cer_icon {
